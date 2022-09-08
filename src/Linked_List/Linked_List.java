@@ -1,7 +1,9 @@
 package Linked_List;
 
 public class Linked_List {
-    Linked_Node Head;
+    Linked_Node Head=null;
+
+    public Linked_List(){}
 
     public Linked_List(Linked_Node Head) {
         this.Head = Head;
@@ -34,5 +36,10 @@ public class Linked_List {
     public void Push(Linked_Node newHead){
         newHead.Next=this.Head;
         Head=newHead;
+    }
+    public Linked_Node Pull(){
+        Linked_Node Return = this.Head;
+        this.Head=this.Head.Next;
+        return Return;
     }
 }
