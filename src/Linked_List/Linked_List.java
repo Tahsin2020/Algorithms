@@ -35,11 +35,14 @@ public class Linked_List {
     }
     public void Push(Linked_Node newHead){
         newHead.Next=this.Head;
-        Head=newHead;
+        this.Head=newHead;
     }
     public Linked_Node Pull(){
         Linked_Node Return = this.Head;
         this.Head=this.Head.Next;
         return Return;
+    }
+    public boolean IsEmpty(){
+        return (this.Head==null);
     }
 }

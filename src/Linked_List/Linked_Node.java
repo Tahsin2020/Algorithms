@@ -13,4 +13,7 @@ public class Linked_Node {
         this.value=value;
     }
 
+    public int getValue() {
+        return this.value;
+    }
 }
